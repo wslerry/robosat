@@ -2,5 +2,5 @@
 
    The package's tools and their sub-command help pages can be seen via:
 
-       python3 -m landsurvey.tools --help
+       python -m landsurvey.tools --help
 """

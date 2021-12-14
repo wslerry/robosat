@@ -13,7 +13,7 @@ from landsurvey.spatial.core import make_index, iou
 def add_parser(subparser):
     parser = subparser.add_parser(
         "dedupe",
-        help="deduplicates features against OpenStreetMap",
+        help="deduplicates features against vector files (FeatureLayer/ Vector datasets/ OpenStreetMap)",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
 

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>Robosat</title>
+  <title>Land & Survey Deep Learning</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
@@ -67,7 +67,7 @@ var map = new mapboxgl.Compare(beforeMap, afterMap, {});
 
 afterMap.on('load', function() {
   afterMap.addLayer({
-    'id': 'robosat',
+    'id': 'landsurvey',
     'type': 'raster',
     'source': {
       'type': 'raster',
@@ -76,7 +76,7 @@ afterMap.on('load', function() {
     }
   });
 
-  afterMap.setPaintProperty('robosat', 'raster-opacity', 0.6);
+  afterMap.setPaintProperty('landsurvey', 'raster-opacity', 0.6);
 });
 </script>
 
