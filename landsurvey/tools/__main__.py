@@ -22,8 +22,8 @@ from landsurvey.tools import (
 
 
 def add_parsers():
-    parser = argparse.ArgumentParser(prog="./rs")
-    subparser = parser.add_subparsers(title="robosat tools", metavar="")
+    parser = argparse.ArgumentParser(prog="./landsurvey")
+    subparser = parser.add_subparsers(title="landsurvey tools", metavar="")
 
     # Add your tool's entry point below.
 
@@ -51,7 +51,10 @@ def add_parsers():
     # are responsible for adding a function hook to their command.
     return parser.parse_args()
 
-
-if __name__ == "__main__":
+def main():
+    """main entrypoint for robosat tools"""
     args = add_parsers()
     args.func(args)
+    
+if __name__ == "__main__":
+    main()
