@@ -8,9 +8,9 @@ import torch
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose
 
-from robosat.config import load_config
-from robosat.datasets import SlippyMapTiles
-from robosat.transforms import ConvertImageMode, MaskToTensor
+from landsurvey.config import load_config
+from landsurvey.datasets import SlippyMapTiles
+from landsurvey.transforms import ConvertImageMode, MaskToTensor
 
 
 def add_parser(subparser):

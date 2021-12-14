@@ -7,8 +7,8 @@ import numpy as np
 from tqdm import tqdm
 from PIL import Image
 
-from robosat.tiles import tiles_from_slippy_map
-from robosat.colors import make_palette
+from landsurvey.tiles import tiles_from_slippy_map
+from landsurvey.colors import make_palette
 
 
 def add_parser(subparser):

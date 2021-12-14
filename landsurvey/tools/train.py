@@ -14,7 +14,7 @@ from torchvision.transforms import Resize, CenterCrop, Normalize
 
 from tqdm import tqdm
 
-from robosat.transforms import (
+from landsurvey.transforms import (
     JointCompose,
     JointTransform,
     JointRandomHorizontalFlip,
@@ -23,12 +23,12 @@ from robosat.transforms import (
     ImageToTensor,
     MaskToTensor,
 )
-from robosat.datasets import SlippyMapTilesConcatenation
-from robosat.metrics import MeanIoU
-from robosat.losses import CrossEntropyLoss2d
-from robosat.unet import UNet
-from robosat.utils import plot
-from robosat.config import load_config
+from landsurvey.datasets import SlippyMapTilesConcatenation
+from landsurvey.metrics import MeanIoU
+from landsurvey.losses import CrossEntropyLoss2d
+from landsurvey.unet import UNet
+from landsurvey.utils import plot
+from landsurvey.config import load_config
 
 
 def add_parser(subparser):

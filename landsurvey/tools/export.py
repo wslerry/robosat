@@ -4,8 +4,8 @@ import torch
 import torch.onnx
 import torch.autograd
 
-from robosat.config import load_config
-from robosat.unet import UNet
+from landsurvey.config import load_config
+from landsurvey.unet import UNet
 
 
 def add_parser(subparser):

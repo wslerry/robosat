@@ -13,11 +13,11 @@ from torchvision.transforms import Compose, Normalize
 from tqdm import tqdm
 from PIL import Image
 
-from robosat.datasets import BufferedSlippyMapDirectory
-from robosat.unet import UNet
-from robosat.config import load_config
-from robosat.colors import continuous_palette_for_color
-from robosat.transforms import ConvertImageMode, ImageToTensor
+from landsurvey.datasets import BufferedSlippyMapDirectory
+from landsurvey.unet import UNet
+from landsurvey.config import load_config
+from landsurvey.colors import continuous_palette_for_color
+from landsurvey.transforms import ConvertImageMode, ImageToTensor
 
 
 def add_parser(subparser):

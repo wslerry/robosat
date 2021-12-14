@@ -5,7 +5,7 @@ import geojson
 
 import shapely.geometry
 
-from robosat.features.core import denoise, grow, contours, simplify, featurize, parents_in_hierarchy
+from landsurvey.features.core import denoise, grow, contours, simplify, featurize, parents_in_hierarchy
 
 
 class ParkingHandler:

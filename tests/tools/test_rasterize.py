@@ -4,7 +4,7 @@ import unittest
 import numpy as np
 import mercantile
 
-from robosat.tools.rasterize import burn, feature_to_mercator
+from landsurvey.tools.rasterize import burn, feature_to_mercator
 
 
 def get_parking():

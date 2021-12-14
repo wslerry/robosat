@@ -6,8 +6,8 @@ import geojson
 from tqdm import tqdm
 import shapely.geometry
 
-from robosat.spatial.core import make_index, project, union
-from robosat.graph.core import UndirectedGraph
+from landsurvey.spatial.core import make_index, project, union
+from landsurvey.graph.core import UndirectedGraph
 
 
 def add_parser(subparser):

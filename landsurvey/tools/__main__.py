@@ -2,7 +2,7 @@
 
 import argparse
 
-from robosat.tools import (
+from landsurvey.tools import (
     compare,
     cover,
     dedupe,
