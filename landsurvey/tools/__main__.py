@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import argparse
 
 from landsurvey.tools import (
@@ -49,12 +47,17 @@ def add_parsers():
 
     # We return the parsed arguments, but the sub-command parsers
     # are responsible for adding a function hook to their command.
+
+    subparser.required = True
+
     return parser.parse_args()
+
 
 def main():
     """main entrypoint for robosat tools"""
     args = add_parsers()
     args.func(args)
-    
+
+
 if __name__ == "__main__":
     main()
